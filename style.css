@@ -1,0 +1,467 @@
+
+/* =====================================
+   GENERAL SETTINGS
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    background-color: #fff8f2;
+    color: #49304f;
+    text-align: center;
+}
+
+
+/* =====================================
+   HERO SECTION
+===================================== */
+
+.hero {
+    min-height: 100vh;
+    padding: 55px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #ffd6e7,
+        #e6d6ff,
+        #fff0bd
+    );
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tag {
+    background-color: white;
+    padding: 12px 22px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px #00000015;
+}
+
+.hero h1 {
+    color: #e74783;
+    font-size: clamp(42px, 8vw, 75px);
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    color: #7046a3;
+    font-size: clamp(23px, 5vw, 38px);
+    margin-bottom: 15px;
+}
+
+.hero-text {
+    font-size: 18px;
+    max-width: 550px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+
+/* =====================================
+   MAIN PHOTO
+===================================== */
+
+.main-photo {
+    width: 260px;
+    height: 290px;
+    padding: 10px;
+    background: white;
+    border-radius: 8px;
+    transform: rotate(-3deg);
+    box-shadow: 0 8px 25px #00000025;
+    margin-bottom: 20px;
+}
+
+.main-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.photo-placeholder {
+    width: 100%;
+    height: 100%;
+    background: #fce4ef;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: #b64c7c;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.photo-caption {
+    font-weight: bold;
+    margin-bottom: 25px;
+    font-size: 17px;
+}
+
+
+/* =====================================
+   BUTTONS
+===================================== */
+
+.main-btn {
+    background: linear-gradient(
+        135deg,
+        #f05c99,
+        #a66de0
+    );
+
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px #00000020;
+}
+
+.main-btn:hover {
+    transform: scale(1.07);
+    box-shadow: 0 8px 20px #00000030;
+}
+
+
+/* =====================================
+   COMMON SECTION SETTINGS
+===================================== */
+
+section {
+    padding: 75px 25px;
+}
+
+section h2 {
+    font-size: clamp(27px, 5vw, 40px);
+    color: #df4f89;
+    margin-bottom: 18px;
+}
+
+.section-subtitle {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+
+/* =====================================
+   ROAST SECTION
+===================================== */
+
+.roast-section {
+    background: #fff0c9;
+}
+
+.roast-grid {
+    max-width: 850px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.roast-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px #00000010;
+    transition: 0.3s;
+}
+
+.roast-card:hover {
+    transform: rotate(-2deg) scale(1.04);
+}
+
+.roast-card span {
+    font-size: 40px;
+}
+
+.roast-card h3 {
+    color: #a34e9e;
+    margin: 12px 0;
+}
+
+.roast-card p {
+    line-height: 1.6;
+}
+
+.roast-ending {
+    margin-top: 35px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+
+/* =====================================
+   MEMORIES SECTION
+   FOUR PICTURES - 2 X 2 LAYOUT
+===================================== */
+
+.memories-section {
+    background: #f1e8ff;
+}
+
+.memory-grid {
+    max-width: 850px;
+    margin: 40px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+}
+
+.memory-card {
+    background: white;
+    padding: 15px 15px 22px;
+    border-radius: 10px;
+    box-shadow: 0 7px 18px #00000018;
+    transition: 0.3s;
+}
+
+.memory-card:nth-child(odd) {
+    transform: rotate(-2deg);
+}
+
+.memory-card:nth-child(even) {
+    transform: rotate(2deg);
+}
+
+.memory-card:hover {
+    transform: rotate(0deg) scale(1.04);
+}
+
+.memory-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.memory-card p {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+/* =====================================
+   MUSIC SECTION
+===================================== */
+
+.music-section {
+    background: #d9f8e8;
+}
+
+.music-section p {
+    font-size: 17px;
+    margin: 15px 0 25px;
+    line-height: 1.7;
+}
+
+.music-note {
+    font-size: 13px !important;
+    color: #6d6370;
+}
+
+
+/* =====================================
+   CAKE SECTION
+===================================== */
+
+.cake-section {
+    background: #ffe0ec;
+}
+
+.cake {
+    font-size: 100px;
+    margin: 25px 0;
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+.wish-message {
+    font-size: 20px;
+    font-weight: bold;
+    color: #d43d80;
+    margin-top: 25px;
+}
+
+
+/* =====================================
+   PERSONAL LETTER SECTION
+===================================== */
+
+.letter-section {
+    background: #fff8dc;
+}
+
+.letter {
+    max-width: 600px;
+    margin: 35px auto 0;
+    padding: 35px 25px;
+    background: white;
+    border: 3px dashed #ed82ad;
+    border-radius: 20px;
+    box-shadow: 0 7px 20px #00000015;
+}
+
+.letter h3 {
+    color: #dc4b8a;
+    margin-bottom: 20px;
+}
+
+.letter p {
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+
+
+/* =====================================
+   HIDE ELEMENTS
+===================================== */
+
+.hidden {
+    display: none;
+}
+
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer {
+    background: #49304f;
+    color: white;
+    padding: 40px 20px;
+}
+
+footer h2 {
+    color: #ffd1e4;
+    margin-bottom: 15px;
+}
+
+footer p {
+    margin: 10px;
+    font-size: 14px;
+}
+
+
+/* =====================================
+   CONFETTI ANIMATION
+===================================== */
+
+#confetti {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+.confetti-piece {
+    position: absolute;
+    top: -30px;
+    font-size: 22px;
+    animation: fall linear forwards;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(110vh) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+
+/* =====================================
+   MOBILE RESPONSIVE DESIGN
+===================================== */
+
+@media (max-width: 600px) {
+
+    .hero {
+        padding: 45px 15px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 55px 16px;
+    }
+
+    /* Roast cards one below another */
+
+    .roast-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Memory pictures one below another on mobile */
+
+    .memory-grid {
+        grid-template-columns: 1fr;
+        max-width: 350px;
+        gap: 25px;
+    }
+
+    .memory-card img {
+        height: 250px;
+    }
+
+    .main-photo {
+        width: 240px;
+        height: 270px;
+    }
+
+    .letter {
+        padding: 25px 18px;
+    }
+
+}
+/* HIDDEN BACKGROUND MUSIC PLAYER */
+
+#youtube-player-container {
+    position: fixed;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    left: -10px;
+    top: -10px;
+}
